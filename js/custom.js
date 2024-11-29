@@ -28,6 +28,13 @@
 (function () {
   "use strict";
 
+  // Calculate the year difference from 2022 to the current year
+  var currentYear = new Date().getFullYear();
+  var yearDifference = currentYear - 2021;
+
+  // Set the calculated year difference in the element with class 'year-number'
+  $(".year-number").text(yearDifference);
+
   // Preloader
   $("#preloader").fadeOut(400);
   $(".preloader-bg").delay(300).fadeOut(400);
